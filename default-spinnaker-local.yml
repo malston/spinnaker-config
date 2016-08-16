@@ -37,13 +37,13 @@ providers:
     # If you want to deploy some services to Cloud Foundry (cf),
     # set enabled and provide primary credentials for deploying.
     # Enabling cf is independent of other providers.
-    enabled: false
-    defaultOrg: spinnaker-cf-org
-    defaultSpace: spinnaker-cf-space
+    enabled: true
+    defaultOrg: malston-pivot-org
+    defaultSpace: spinnaker
     primaryCredentials:
-      name: my-cf-account
-      api: my-cf-api-uri
-      console: my-cf-console-base-url
+      name: malston-concourse
+      api: https://api.run.pez.pivotal.io
+      console: https://apps.run.pez.pivotal.io/2/organizations/5e82b6ea-7033-49d5-92ae-9846ca9900bd/spaces/95a13fb4-8364-4af0-82a1-2b81a8cf29f5
     # You must also supply cf.account.username and cf.account.password through env properties
 
 services:
